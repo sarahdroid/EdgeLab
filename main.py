@@ -1,30 +1,18 @@
-"""Quantitative Capital Allocation & Risk Engine.
+"""EdgeLab: Monte Carlo simulation of blackjack betting strategies
+and bankroll risk.
 
-Monte Carlo evaluation of position-sizing strategies (flat betting versus a
-fractional Kelly Criterion module) in an imperfect-information environment
-(Blackjack) over a finite capital pool.
+Uses Python's standard library to compare flat betting with
+fractional Kelly sizing and evaluate bankroll performance.
 
-Design notes
-------------
-* Python 3 standard library only.
-* A fresh, fully shuffled 52-card deck is used for every hand. Each strategy
-  gets its own ``random.Random`` seeded identically, and that generator is
-  consumed ONLY by deck shuffles. Consequently both strategies face the exact
-  same sequence of shuffled decks (hand N is identical for both), which makes
-  the comparison paired and removes cross-strategy sampling noise.
-* The player's choices are limited to HIT or STAND (no doubling, splitting,
-  insurance or surrender), matching the rule set of the specification.
-* Dealer peeks for a natural: a dealer natural ends the round immediately.
-* Betting timing: a conventional table takes bets BEFORE any card is seen, so
-  the default Kelly module ("blind") uses one pooled edge estimate. As an
-  explicit what-if, ``KellyConfig.condition_on_dealer_upcard=True`` lets the
-  module size its wager AFTER the dealer upcard is visible, with separate
-  edge estimates per hand type (weak / neutral / strong upcard). That is
-  NOT how a real table works; it models an information advantage.
-* A table maximum bet (``KellyConfig.maximum_bet``) bounds every wager so
-  compounding cannot produce unphysical bankrolls.
+Limitations:
+- Player decisions are restricted to hit or stand.
+- The upcard-conditioned strategy uses information unavailable
+  when conventional bets are placed.
+- Identically seeded random generators provide reproducible
+  shuffles, but different player decisions can lead to different
+  cards being drawn within a hand.
 
-Run:  python3 main.py
+Run: python main.py
 """
 
 from __future__ import annotations
