@@ -30,7 +30,6 @@ Options: `main.py --hands N --seed N --charts DIR`, and `table_limits.py --seeds
 | `charts.py` | Dependency-free SVG line/bar chart renderer. |
 | `test_main.py` | Engine tests: Ace inversion, dealer boundaries, payouts, drawdown, strategies, Kelly sizing. |
 | `test_charts.py`, `test_table_limits.py` | Tests for charting and the experiment. |
-| `charts/` | Generated SVG output. |
 
 ## The game
 
