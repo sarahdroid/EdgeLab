@@ -85,9 +85,6 @@ Two variants run side by side, and the difference matters:
 | Std dev / 100 hands | 26.98% | 26.16% | 6.72% |
 | Sharpe-equivalent | -0.74 | -0.13 | 0.25 |
 
-![Bankroll over time](charts/strategy_bankroll_paths.svg)
-
-![Drawdown over time](charts/strategy_drawdown.svg)
 
 **How to read this honestly.**
 
@@ -135,13 +132,7 @@ In this engine the peak fraction sits at the 5% hard cap, so `B* = 20 x M`.
 | $5,000 | $15.6M | 1.93% | 55.4% | 0% | 50.0% | $105.8K | $100K |
 | No limit | $1.7e+58 | 24.73% | 73.3% | 0% | 0% | never | n/a |
 
-![Bankroll paths by table limit](charts/table_limits_bankroll_paths.svg)
 
-![Median final bankroll](charts/table_limits_final_bankroll.svg)
-
-![Growth rate](charts/table_limits_growth_rate.svg)
-
-![Drawdown](charts/table_limits_drawdown.svg)
 
 ### What it shows
 
