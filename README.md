@@ -1,6 +1,6 @@
 # edgelab
 
-**A Quantitative Capital Allocation & Risk Engine.** edgelab is a Monte Carlo lab that asks one question: *given a finite bankroll and an imperfect-information game, how much should you bet, and what does that choice do to your risk?*
+**A Quantitative Capital Allocation & Risk Engine.** EdgeLab is a Monte Carlo lab that asks one question: *given a finite bankroll and an imperfect-information game, how much should you bet, and what does that choice do to your risk?*
 
 It compares flat betting against a fractional Kelly Criterion in Blackjack, measures the result with risk metrics a trading desk would recognize (drawdown, risk of ruin, Sharpe-equivalent), and then stress-tests Kelly against a real-world constraint: **casino table limits**.
 
