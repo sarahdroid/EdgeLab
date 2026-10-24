@@ -1,4 +1,4 @@
-# edgelab
+# EdgeLab
 
 **A Quantitative Capital Allocation & Risk Engine.** EdgeLab is a Monte Carlo lab that asks one question: *given a finite bankroll and an imperfect-information game, how much should you bet, and what does that choice do to your risk?*
 
