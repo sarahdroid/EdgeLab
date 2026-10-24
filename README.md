@@ -5,7 +5,6 @@
 It compares flat betting against a fractional Kelly Criterion in Blackjack, measures the result with risk metrics a trading desk would recognize (drawdown, risk of ruin, Sharpe-equivalent), and then stress-tests Kelly against a real-world constraint: **casino table limits**.
 
 - Python 3 **standard library only**. No NumPy, no Pandas, no Matplotlib.
-- Charts are hand-built **SVG files**, so they open in any browser and render on GitHub.
 - Deterministic: fixed seeds, and every strategy sees the *same shuffled decks* hand for hand.
 
 ---
